@@ -12,16 +12,31 @@
         table {
             border-collapse: collapse;
         }
-
+        thead.head {
+            background-color: gray;
+            color: white;
+        }
         th, td {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        th.md {
+            text-align: left;
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <table>
-        <thead>
+        <thead class="head">
             <tr>
                 <th rowspan="2">Área</th>
                 <th rowspan="2">Disciplinas</th>
@@ -60,8 +75,8 @@
                 <td>9,0</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Exatas</th>
-                <td>8,25</td>
+                <th colspan="4" class="md">Média de Exatas</th>
+                <td class="num">8,25</td>
             </tr>
             <tr>
                 <th rowspan="2">Humanas</th>
@@ -77,8 +92,8 @@
                 <td>9,0</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Humanas</th>
-                <td>8,5</td>
+                <th colspan="4" class="md">Média de Humanas</th>
+                <td class="num">8,5</td>
             </tr>
         </tbody>
     </table>
